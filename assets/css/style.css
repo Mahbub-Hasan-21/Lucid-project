@@ -1,0 +1,218 @@
+/* 
+  Lucid Project :
+
+  Font Family -    Open Sans
+
+  Primary Color -  #008ed6
+  Secondary Color- #7f7f7f
+  				   #999999
+
+*/
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+/* Global Css */
+*{
+	  margin: 0;
+	  padding: 0;
+}
+body{
+	  font-family: 'Open Sans', sans-serif;
+}
+.margin-align{
+	  margin-left: 12px;
+}
+.btn-global{
+	  margin-right: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: 500;
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid #4d4e53;
+    border-radius: 5px;
+    transition: 0.4s all ease-in-out;
+}
+.section-intro{
+		text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    color: #008ed6;
+    text-align: center;
+}
+.section-title{
+		text-align: center;
+    text-transform: capitalize;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 15px 0px;
+}
+.section-box{
+	  position: relative;
+}
+.section-border::before{
+	  content: "";
+    position: absolute;
+    left: 48%;
+    width: 0%;
+    height: 2px;
+    background: #008ed6;
+    transition: 0.4s all ease-in-out;
+}
+.section-border::after{
+	 content: "";
+    position: absolute;
+    right: 48%;
+    width: 0%;
+    height: 2px;
+    background: #008ed6;
+    transition: 0.4s all ease-in-out;
+}
+
+/* Header CSS Start */
+
+header{
+		background: url('../img/banner-image.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		height: 95vh;
+}
+.header-section .navbar-section{
+	  margin-top: 15px;
+}
+.header-section .nav-item .nav-link{
+	  position: relative;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 0;
+    margin: 0 15px;
+    transition: 0.4s all ease-in-out;
+}
+.header-section .nav-item .nav-link::before{
+		content: "";
+		position: absolute;
+		bottom: -5px;
+		left: 0;
+		width: 0%;
+		height: 2px;
+		background: #008ed6;
+		transition: 0.4s all ease-in-out;
+}
+.header-section .nav-item .nav-link::after{
+		content: "";
+		position: absolute;
+		bottom:-5px;
+		right: 0;
+		width: 0%;
+		height: 2px;
+		background: #008ed6;
+		transition: 0.4s all ease-in-out;
+}
+.header-section .nav-item .nav-link:hover::before,
+.header-section .nav-item .nav-link:hover::after{
+		width: 46%;
+}
+.header-section .header-intro{
+		position: relative;
+		min-height: 85vh;
+}
+.header-section .header-intro h5{
+		color: #008ed6;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.header-section .header-intro h1{
+		color: #ffffff;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 55px;
+}
+.header-section .header-intro p{
+		color: #7f7f7f;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    margin: 30px 0;
+}
+.header-intro .header-button{
+		margin-top: 100px;
+}
+.header-intro .header-button ul{
+		padding: 0;
+}
+.header-intro .header-button ul li{
+		list-style: none;
+		display: inline-block;
+}
+.header-button .btn-global:hover{
+		background: #008ed6;
+		border: 2px solid #008ed6;
+}
+.header-intro .banner-phone{
+		position: absolute;
+		bottom: 0;
+		right: 80px;
+}
+
+/* Header CSS End */
+
+/* Feature CSS Start */
+
+.feature-section{
+		padding: 60px 0;
+		border-bottom: 1px solid #ededed;
+		transition: 0.4s all ease-in-out;
+}
+.feature-section:hover .section-border::before,
+.feature-section:hover .section-border::after{
+		width: 2%;
+}
+.feature-section .feature-item{
+		margin-top: 100px;
+}	
+.feature-section .feature-item-box{
+	  cursor: pointer;
+		transition: 0.4s all ease-in-out;
+}
+.feature-section .feature-item-box .fa-solid{
+		font-size: 30px;
+    height: 100px;
+    width: 100px;
+    border: 2px solid #e2e2e2;
+    border-radius: 50%;
+    color: #008ed6;
+    line-height: 100px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+.feature-section .feature-item-box h3{
+		text-align: center;
+    margin: 15px 0px;
+    text-transform: capitalize;
+    font-size: 25px;
+}
+.feature-section .feature-item-box p{
+		color: #999999;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 23px;
+    padding: 0px 30px;
+    text-align: center;
+}
+.feature-section .feature-item-box:hover{
+		padding: 20px 0;
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    box-sizing: border-box;
+}
+
+/* Feature CSS End */
